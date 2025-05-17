@@ -574,11 +574,10 @@
   <div class="center">
     <h2>🎓 EDUCATION & PROFESSIONAL DEVELOPMENT</h2>
   </div>
-  <table class="enterprise-table">
-    <tr>
+  <tr>
       <td width="60%">
         <h3>Academic Credentials</h3>
-        <table width="100%">
+        <table width="10%">
           <tr>
             <td align="center" width="80px" valign="middle">🎓</td>
             <td>
