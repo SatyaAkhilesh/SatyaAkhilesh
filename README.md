@@ -1,12 +1,16 @@
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=venom&color=0:000000,50:1a1a2e,100:0f0f23&height=200&section=header&text=Satya&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=40&stroke=ffffff&strokeWidth=1)
+![Header](https://capsule-render.vercel.app/api?type=venom&color=0:000000,50:1a1a2e,100:0f0f23&height=300&section=header&text=Satya&fontSize=80&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Full%20Stack%20Engineer%20%7C%20Cloud%20Architect%20%7C%20AI%20Integration&descSize=18&descAlignY=55&descColor=8b949e&stroke=ffffff&strokeWidth=1)
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=FFFFFF&center=true&vCenter=true&random=false&width=500&lines=Full+Stack+Engineer;Cloud+Architect;AI+%2F+ML+Integration;Building+systems+that+scale" alt="Typing" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=FFFFFF&center=true&vCenter=true&random=false&width=500&lines=Building+systems+that+scale;1M%2B+users+served;Cloud-native+microservices;AI+%2F+ML+powered+solutions" alt="Typing" />
 
 </div>
 
----
+<br/>
+
+<table>
+<tr>
+<td>
 
 ### Hey 👋
 
@@ -16,14 +20,28 @@ Currently at **MUNDO Prints** in Boston — building cloud-native microservices,
 
 MS in Information Systems @ **Northeastern**. CS undergrad @ **SRM**.
 
----
+</td>
+</tr>
+</table>
 
-### Stack
+<br/>
 
-<img src="https://skillicons.dev/icons?i=java,js,ts,python,react,nextjs,angular,spring,nodejs,fastapi,mongodb,postgres,mysql,redis,dynamodb,aws,gcp,docker,kubernetes,kafka,jenkins,github,grafana,prometheus&perline=12&theme=dark" />
+<div align="center">
+
+## Stack
+
+<img src="https://skillicons.dev/icons?i=java,js,ts,python,react,nextjs,angular,spring,nodejs,fastapi&perline=10&theme=dark" />
+<br/>
+<img src="https://skillicons.dev/icons?i=mongodb,postgres,mysql,redis,dynamodb,aws,gcp,docker,kubernetes,kafka&perline=10&theme=dark" />
+<br/>
+<img src="https://skillicons.dev/icons?i=jenkins,github,grafana,prometheus,linux,bash,git,vscode,idea,figma&perline=10&theme=dark" />
+
+</div>
+
+<br/>
 
 <details>
-<summary><b>Full breakdown</b></summary>
+<summary><b>📂 Full Tech Breakdown</b></summary>
 <br>
 
 | Area | Tech |
@@ -40,26 +58,31 @@ MS in Information Systems @ **Northeastern**. CS undergrad @ **SRM**.
 
 </details>
 
----
+<br/>
 
-### Work
+<div align="center">
+
+## Work
+
+</div>
 
 <details open>
-<summary><b>MUNDO Prints</b> — Full Stack & AI Programmer (Jan 2025 - Present)</summary>
+<summary><b>🔷 MUNDO Prints</b> — Full Stack & AI Programmer (Jan 2025 - Present)</summary>
 <br>
 
-Building cloud-native microservices with Spring Boot 3.x and WebFlux. Hexagonal Architecture, CQRS, DDD — the works.
+Building cloud-native microservices with Spring Boot 3.x and WebFlux. Hexagonal Architecture, CQRS, DDD.
 
 - Integrated **OpenAI GPT-4** and **AWS Bedrock** for pricing algorithms and content generation
 - Built serverless workflows with Lambda, API Gateway, S3 triggers — cut latency by **35%**
 - Scaled AI chatbots from 18s to **6s response time** using Redis caching
 - React 18 + Next.js 13 frontend — Core Web Vitals optimized, WCAG 2.1 AA compliant
 - **95%+ test coverage** with JUnit 5 and Mockito
+- **$75K+ revenue impact** through ML-powered features
 
 </details>
 
 <details>
-<summary><b>Nextrics</b> — Full Stack & Cloud Engineer (May 2022 - Aug 2023)</summary>
+<summary><b>🔷 Nextrics</b> — Full Stack & Cloud Engineer (May 2022 - Aug 2023)</summary>
 <br>
 
 Cloud-native microservices at scale. Docker, Kubernetes, the whole nine yards.
@@ -73,7 +96,7 @@ Cloud-native microservices at scale. Docker, Kubernetes, the whole nine yards.
 </details>
 
 <details>
-<summary><b>HighRadius</b> — Software Engineer Intern (Jan 2022 - Apr 2022)</summary>
+<summary><b>🔷 HighRadius</b> — Software Engineer Intern (Jan 2022 - Apr 2022)</summary>
 <br>
 
 Payment platform work. Security-first, PCI-DSS compliant.
@@ -85,85 +108,155 @@ Payment platform work. Security-first, PCI-DSS compliant.
 
 </details>
 
----
+<br/>
 
-### Projects
+<div align="center">
 
-<details>
-<summary><b>Cloud-Native Microservices Platform</b></summary>
-<br>
+## Projects
 
-Production-grade microservices architecture with everything wired up properly.
+</div>
 
-- Spring Boot 3.x with reactive WebFlux
-- Hexagonal Architecture + CQRS + DDD
-- Kubernetes deployment with Helm charts
-- Prometheus + Grafana monitoring
-- Circuit breaker and bulkhead patterns for fault tolerance
+<table>
+<tr>
+<td width="50%">
 
-</details>
+### Cloud-Native Microservices
 
-<details>
-<summary><b>AI-Powered Pricing Engine</b></summary>
-<br>
+Production-grade architecture
 
-ML-powered dynamic pricing that actually moves the needle.
+- Spring Boot 3.x + WebFlux
+- Hexagonal + CQRS + DDD
+- Kubernetes + Helm
+- Prometheus + Grafana
+- Circuit breaker patterns
 
-- OpenAI GPT-4 + AWS Bedrock integration
-- Serverless on Lambda with API Gateway
+</td>
+<td width="50%">
+
+### AI Pricing Engine
+
+ML-powered dynamic pricing
+
+- OpenAI GPT-4 + AWS Bedrock
+- Serverless Lambda
 - **$75K+ revenue impact**
-- **30% increase** in user engagement
+- **30%** engagement increase
 
-</details>
+</td>
+</tr>
+<tr>
+<td width="50%">
 
-<details>
-<summary><b>Real-Time Event Streaming Pipeline</b></summary>
-<br>
+### Event Streaming Pipeline
 
-Kafka-based streaming that handles the load.
+Real-time Kafka architecture
 
-- Exactly-once semantics with Schema Registry
-- Consumer groups for parallel processing
-- Millisecond latency under peak load
-- Fault-tolerant message durability
+- Exactly-once semantics
+- Schema Registry + Avro
+- Millisecond latency
+- Fault-tolerant durability
 
-</details>
+</td>
+<td width="50%">
 
----
+### High-Performance Frontend
 
-### Numbers
+Next.js 13 + React 18
 
-```
-1M+ users · $1M+ transactions/mo · 99.99% uptime · 35% latency reduction · 95% test coverage
-```
+- Server Components + SSR
+- Core Web Vitals optimized
+- WCAG 2.1 AA compliant
+- **40%** UX improvement
 
----
+</td>
+</tr>
+</table>
 
-### Education
+<br/>
+
+<div align="center">
+
+## Numbers
+
+</div>
+
+<table>
+<tr>
+<td align="center" width="20%">
+
+**1M+**
+<br/>
+users served
+
+</td>
+<td align="center" width="20%">
+
+**$1M+**
+<br/>
+transactions/mo
+
+</td>
+<td align="center" width="20%">
+
+**99.99%**
+<br/>
+uptime
+
+</td>
+<td align="center" width="20%">
+
+**35%**
+<br/>
+latency cut
+
+</td>
+<td align="center" width="20%">
+
+**95%**
+<br/>
+test coverage
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<div align="center">
+
+## Education
 
 🎓 **MS Information Systems** — Northeastern University, Boston
 
 🎓 **BTech Computer Science** — SRM University, Chennai
 
----
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=SatyaAkhiles&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&hide_title=true" width="48%" />
-<img src="https://github-readme-streak-stats.herokuapp.com?user=SatyaAkhiles&theme=dark&hide_border=true&background=0D1117" width="48%" />
+</div>
 
 <br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=SatyaAkhiles&theme=github-dark&hide_border=true&bg_color=0d1117&area=true" width="98%"/>
+<div align="center">
+
+## GitHub
+
+<img src="https://github-readme-stats.vercel.app/api?username=SatyaAkhiles&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&hide_title=true" width="49%" />
+<img src="https://github-readme-streak-stats.herokuapp.com?user=SatyaAkhiles&theme=github-dark-blue&hide_border=true&background=0D1117" width="49%" />
+
+<br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=SatyaAkhiles&theme=github-dark&hide_border=true&bg_color=0d1117&area=true&line=58a6ff&point=58a6ff" width="98%"/>
+
+<br/>
+
+![Snake](https://raw.githubusercontent.com/SatyaAkhiles/SatyaAkhiles/output/github-snake-dark.svg)
 
 </div>
 
----
+<br/>
 
 <div align="center">
 
 *Ship it, monitor it, fix it, repeat.*
 
-![Footer](https://capsule-render.vercel.app/api?type=venom&color=0:0f0f23,50:1a1a2e,100:000000&height=120&section=footer)
-
 </div>
+
+![Footer](https://capsule-render.vercel.app/api?type=venom&color=0:0f0f23,50:1a1a2e,100:000000&height=150&section=footer)
