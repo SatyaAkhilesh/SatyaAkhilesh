@@ -1,576 +1,216 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Satya P – Senior Cloud & AI Engineer</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #16213e 100%);
-      min-height: 100vh;
-      color: #e0e0e0;
-      overflow-x: hidden;
-    }
-    
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 40px 20px;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle at 30% 40%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
-                  radial-gradient(circle at 70% 60%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
-      animation: pulse 8s ease-in-out infinite;
-    }
-    
-    @keyframes pulse {
-      0%, 100% { transform: scale(1) rotate(0deg); }
-      50% { transform: scale(1.1) rotate(5deg); }
-    }
-    
-    .hero-content {
-      position: relative;
-      z-index: 1;
-    }
-    
-    .avatar {
-      width: 140px;
-      height: 140px;
-      background: linear-gradient(135deg, #6366f1, #8b5cf6, #a855f7);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 48px;
-      font-weight: 700;
-      color: white;
-      margin: 0 auto 30px;
-      box-shadow: 0 0 60px rgba(139, 92, 246, 0.4);
-      animation: float 6s ease-in-out infinite;
-    }
-    
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-    
-    h1 {
-      font-size: 3.5rem;
-      font-weight: 800;
-      background: linear-gradient(135deg, #fff 0%, #c7d2fe 50%, #a5b4fc 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin-bottom: 15px;
-      letter-spacing: -1px;
-    }
-    
-    .tagline {
-      font-size: 1.3rem;
-      color: #a5b4fc;
-      margin-bottom: 25px;
-      font-weight: 500;
-    }
-    
-    .badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      justify-content: center;
-      margin-bottom: 40px;
-    }
-    
-    .badge {
-      background: rgba(99, 102, 241, 0.2);
-      border: 1px solid rgba(99, 102, 241, 0.4);
-      padding: 8px 18px;
-      border-radius: 50px;
-      font-size: 0.85rem;
-      color: #c7d2fe;
-      backdrop-filter: blur(10px);
-      transition: all 0.3s ease;
-    }
-    
-    .badge:hover {
-      background: rgba(99, 102, 241, 0.4);
-      transform: translateY(-2px);
-    }
-    
-    .stats-row {
-      display: flex;
-      gap: 40px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    
-    .stat {
-      text-align: center;
-    }
-    
-    .stat-value {
-      font-size: 2.5rem;
-      font-weight: 800;
-      background: linear-gradient(135deg, #22d3ee, #6366f1);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    
-    .stat-label {
-      font-size: 0.85rem;
-      color: #94a3b8;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-    
-    .section {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 80px 20px;
-    }
-    
-    h2 {
-      font-size: 2rem;
-      text-align: center;
-      margin-bottom: 50px;
-      color: #fff;
-      position: relative;
-    }
-    
-    h2::after {
-      content: '';
-      display: block;
-      width: 60px;
-      height: 4px;
-      background: linear-gradient(90deg, #6366f1, #a855f7);
-      margin: 15px auto 0;
-      border-radius: 2px;
-    }
-    
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-    
-    .skill-card {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 16px;
-      padding: 25px;
-      backdrop-filter: blur(10px);
-      transition: all 0.4s ease;
-    }
-    
-    .skill-card:hover {
-      transform: translateY(-5px);
-      border-color: rgba(99, 102, 241, 0.5);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    }
-    
-    .skill-icon {
-      font-size: 2rem;
-      margin-bottom: 15px;
-    }
-    
-    .skill-card h3 {
-      color: #fff;
-      margin-bottom: 12px;
-      font-size: 1.1rem;
-    }
-    
-    .skill-card p {
-      color: #94a3b8;
-      font-size: 0.9rem;
-      line-height: 1.6;
-    }
-    
-    .timeline {
-      position: relative;
-      padding-left: 30px;
-    }
-    
-    .timeline::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 2px;
-      background: linear-gradient(180deg, #6366f1, #a855f7, #6366f1);
-    }
-    
-    .timeline-item {
-      position: relative;
-      margin-bottom: 40px;
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 16px;
-      padding: 25px;
-      transition: all 0.3s ease;
-    }
-    
-    .timeline-item:hover {
-      border-color: rgba(99, 102, 241, 0.4);
-      transform: translateX(5px);
-    }
-    
-    .timeline-item::before {
-      content: '';
-      position: absolute;
-      left: -34px;
-      top: 30px;
-      width: 12px;
-      height: 12px;
-      background: #6366f1;
-      border-radius: 50%;
-      box-shadow: 0 0 20px rgba(99, 102, 241, 0.6);
-    }
-    
-    .timeline-date {
-      color: #a855f7;
-      font-size: 0.85rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-    
-    .timeline-item h3 {
-      color: #fff;
-      margin-bottom: 5px;
-    }
-    
-    .timeline-company {
-      color: #6366f1;
-      font-weight: 500;
-      margin-bottom: 15px;
-    }
-    
-    .timeline-item ul {
-      list-style: none;
-    }
-    
-    .timeline-item li {
-      color: #94a3b8;
-      padding: 5px 0;
-      padding-left: 20px;
-      position: relative;
-      font-size: 0.95rem;
-    }
-    
-    .timeline-item li::before {
-      content: '→';
-      position: absolute;
-      left: 0;
-      color: #6366f1;
-    }
-    
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 25px;
-    }
-    
-    .project-card {
-      background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.05));
-      border: 1px solid rgba(99, 102, 241, 0.2);
-      border-radius: 20px;
-      padding: 30px;
-      transition: all 0.4s ease;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .project-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, #6366f1, #a855f7);
-    }
-    
-    .project-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 25px 50px rgba(99, 102, 241, 0.2);
-    }
-    
-    .project-card h3 {
-      color: #fff;
-      margin-bottom: 15px;
-      font-size: 1.2rem;
-    }
-    
-    .project-metrics {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 15px;
-    }
-    
-    .metric {
-      background: rgba(99, 102, 241, 0.2);
-      padding: 6px 14px;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      color: #c7d2fe;
-    }
-    
-    .project-card p {
-      color: #94a3b8;
-      font-size: 0.9rem;
-      line-height: 1.6;
-    }
-    
-    .education-card {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 16px;
-      padding: 30px;
-      text-align: center;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    
-    .edu-item {
-      margin-bottom: 20px;
-    }
-    
-    .edu-item:last-child {
-      margin-bottom: 0;
-    }
-    
-    .edu-degree {
-      color: #fff;
-      font-size: 1.1rem;
-      font-weight: 600;
-    }
-    
-    .edu-school {
-      color: #a855f7;
-    }
-    
-    .footer {
-      text-align: center;
-      padding: 60px 20px;
-      background: rgba(0, 0, 0, 0.3);
-    }
-    
-    .footer h2 {
-      margin-bottom: 30px;
-    }
-    
-    .contact-links {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    
-    .contact-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(99, 102, 241, 0.2);
-      border: 1px solid rgba(99, 102, 241, 0.3);
-      padding: 12px 24px;
-      border-radius: 50px;
-      color: #c7d2fe;
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
-    
-    .contact-link:hover {
-      background: rgba(99, 102, 241, 0.4);
-      transform: translateY(-3px);
-    }
-  </style>
-</head>
+import { useState } from 'react';
 
-<body>
-  <section class="hero">
-    <div class="hero-content">
-      <div class="avatar">SP</div>
-      <h1>Satya P</h1>
-      <p class="tagline">Senior Cloud & AI Engineer</p>
-      <div class="badges">
-        <span class="badge">☁️ AWS Certified</span>
-        <span class="badge">⚡ Serverless</span>
-        <span class="badge">🤖 LLM Integration</span>
-        <span class="badge">🔧 DevOps</span>
-        <span class="badge">🏗️ Microservices</span>
-      </div>
-      <div class="stats-row">
-        <div class="stat">
-          <div class="stat-value">99.99%</div>
-          <div class="stat-label">Uptime</div>
+export default function Portfolio() {
+  const [activeTab, setActiveTab] = useState('overview');
+  
+  const tabs = ['overview', 'experience', 'projects', 'skills'];
+  
+  const skills = [
+    { name: 'AWS', level: 95 },
+    { name: 'React/Next.js', level: 90 },
+    { name: 'Node.js', level: 88 },
+    { name: 'Python', level: 85 },
+    { name: 'Kubernetes', level: 82 },
+    { name: 'AI/LLMs', level: 80 },
+  ];
+
+  const experience = [
+    {
+      role: 'Full Stack & AI Engineer',
+      company: 'MUNDO Prints',
+      period: '2025 – Present',
+      highlights: ['99.99% uptime', '42% revenue growth', '28% cost reduction']
+    },
+    {
+      role: 'Cloud Platform Engineer',
+      company: 'Nextrics',
+      period: '2022 – 2023',
+      highlights: ['99.9% availability', '40% faster load times', '50% faster releases']
+    },
+    {
+      role: 'Developer',
+      company: 'High Radius',
+      period: '2022',
+      highlights: ['$1M+ transactions/mo', '5,000+ concurrent users', 'PCI-DSS compliant']
+    }
+  ];
+
+  const projects = [
+    { name: 'serverless-ecommerce', desc: 'Serverless platform for 10K+ users', lang: 'TypeScript', stars: 42 },
+    { name: 'ai-support-bot', desc: 'RAG-based customer support chatbot', lang: 'Python', stars: 38 },
+    { name: 'microservices-framework', desc: 'K8s + Kafka migration toolkit', lang: 'Java', stars: 27 },
+  ];
+
+  const langColors = {
+    TypeScript: '#3178c6',
+    Python: '#3572A5',
+    Java: '#b07219'
+  };
+
+  return (
+    <div style={{ background: '#0d1117', minHeight: '100vh', color: '#e6edf3', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif', padding: '20px' }}>
+      
+      {/* Header */}
+      <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '20px', flexWrap: 'wrap' }}>
+          <div style={{ width: '80px', height: '80px', borderRadius: '50%', background: 'linear-gradient(135deg, #238636, #1f6feb)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '28px', fontWeight: 'bold', border: '2px solid #30363d' }}>
+            SP
+          </div>
+          <div>
+            <h1 style={{ margin: 0, fontSize: '24px', fontWeight: 600 }}>Satya P</h1>
+            <p style={{ margin: '4px 0', color: '#8b949e', fontSize: '14px' }}>@satya-akhilesh</p>
+            <p style={{ margin: 0, color: '#8b949e', fontSize: '14px' }}>Senior Cloud & AI Engineer</p>
+          </div>
         </div>
-        <div class="stat">
-          <div class="stat-value">28%</div>
-          <div class="stat-label">Cost Reduction</div>
+        
+        <p style={{ color: '#8b949e', marginBottom: '15px', lineHeight: 1.5, fontSize: '14px' }}>
+          AWS Certified • Building scalable serverless systems & AI integrations • MS @ Northeastern
+        </p>
+        
+        <div style={{ display: 'flex', gap: '15px', flexWrap: 'wrap', marginBottom: '25px', fontSize: '13px', color: '#8b949e' }}>
+          <span>📍 Boston, MA</span>
+          <span>🏢 MUNDO Prints</span>
+          <a href="mailto:satyaakhilesh0402@gmail.com" style={{ color: '#58a6ff', textDecoration: 'none' }}>✉️ Email</a>
+          <a href="https://linkedin.com/in/satya-akhilesh-pulavarthi" style={{ color: '#58a6ff', textDecoration: 'none' }}>💼 LinkedIn</a>
         </div>
-        <div class="stat">
-          <div class="stat-value">10K+</div>
-          <div class="stat-label">Concurrent Users</div>
+
+        {/* Tabs */}
+        <div style={{ display: 'flex', gap: '0', borderBottom: '1px solid #30363d', marginBottom: '20px' }}>
+          {tabs.map(tab => (
+            <button
+              key={tab}
+              onClick={() => setActiveTab(tab)}
+              style={{
+                background: 'none',
+                border: 'none',
+                padding: '10px 16px',
+                color: activeTab === tab ? '#e6edf3' : '#8b949e',
+                cursor: 'pointer',
+                fontSize: '14px',
+                textTransform: 'capitalize',
+                borderBottom: activeTab === tab ? '2px solid #f78166' : '2px solid transparent',
+                marginBottom: '-1px'
+              }}
+            >
+              {tab}
+            </button>
+          ))}
         </div>
-        <div class="stat">
-          <div class="stat-value">40%</div>
-          <div class="stat-label">Faster Deploys</div>
-        </div>
+
+        {/* Overview Tab */}
+        {activeTab === 'overview' && (
+          <div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', gap: '15px', marginBottom: '25px' }}>
+              {[
+                { label: 'Uptime', value: '99.99%' },
+                { label: 'Cost Saved', value: '28%' },
+                { label: 'Users', value: '10K+' },
+                { label: 'Deploy Speed', value: '+40%' }
+              ].map(stat => (
+                <div key={stat.label} style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: '6px', padding: '15px', textAlign: 'center' }}>
+                  <div style={{ fontSize: '22px', fontWeight: 'bold', color: '#58a6ff' }}>{stat.value}</div>
+                  <div style={{ fontSize: '12px', color: '#8b949e' }}>{stat.label}</div>
+                </div>
+              ))}
+            </div>
+            
+            <h3 style={{ fontSize: '14px', fontWeight: 600, marginBottom: '12px' }}>Pinned Repositories</h3>
+            <div style={{ display: 'grid', gap: '12px' }}>
+              {projects.map(p => (
+                <div key={p.name} style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: '6px', padding: '15px' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start' }}>
+                    <div>
+                      <span style={{ color: '#58a6ff', fontWeight: 600, fontSize: '14px' }}>📁 {p.name}</span>
+                      <p style={{ color: '#8b949e', fontSize: '12px', margin: '6px 0' }}>{p.desc}</p>
+                    </div>
+                  </div>
+                  <div style={{ display: 'flex', gap: '12px', fontSize: '12px', color: '#8b949e' }}>
+                    <span><span style={{ display: 'inline-block', width: '10px', height: '10px', borderRadius: '50%', background: langColors[p.lang], marginRight: '4px' }}></span>{p.lang}</span>
+                    <span>⭐ {p.stars}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Experience Tab */}
+        {activeTab === 'experience' && (
+          <div style={{ display: 'grid', gap: '15px' }}>
+            {experience.map((exp, i) => (
+              <div key={i} style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: '6px', padding: '20px' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', marginBottom: '10px' }}>
+                  <div>
+                    <h3 style={{ margin: 0, fontSize: '16px', fontWeight: 600 }}>{exp.role}</h3>
+                    <p style={{ margin: '4px 0 0', color: '#58a6ff', fontSize: '14px' }}>{exp.company}</p>
+                  </div>
+                  <span style={{ color: '#8b949e', fontSize: '13px' }}>{exp.period}</span>
+                </div>
+                <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                  {exp.highlights.map((h, j) => (
+                    <span key={j} style={{ background: '#238636', color: '#fff', padding: '3px 10px', borderRadius: '20px', fontSize: '11px' }}>{h}</span>
+                  ))}
+                </div>
+              </div>
+            ))}
+            
+            <div style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: '6px', padding: '20px' }}>
+              <h3 style={{ margin: '0 0 10px', fontSize: '16px', fontWeight: 600 }}>Education</h3>
+              <p style={{ margin: '0 0 5px', fontSize: '14px' }}>🎓 MS, Information Systems – <span style={{ color: '#58a6ff' }}>Northeastern University</span></p>
+              <p style={{ margin: 0, fontSize: '14px' }}>🎓 BTech, ECE – <span style={{ color: '#58a6ff' }}>SRM University</span></p>
+            </div>
+          </div>
+        )}
+
+        {/* Projects Tab */}
+        {activeTab === 'projects' && (
+          <div style={{ display: 'grid', gap: '15px' }}>
+            {[
+              { name: 'serverless-ecommerce', desc: 'Full serverless e-commerce platform handling 10K+ concurrent users with 4× traffic scaling capability', lang: 'TypeScript', stars: 42, forks: 12 },
+              { name: 'ai-support-bot', desc: 'RAG-based chatbot using AWS Bedrock & OpenAI for 45% faster responses and 30% higher satisfaction', lang: 'Python', stars: 38, forks: 8 },
+              { name: 'microservices-framework', desc: 'Kubernetes + Kafka migration toolkit achieving 35% faster processing and 28% cost reduction', lang: 'Java', stars: 27, forks: 5 },
+            ].map(p => (
+              <div key={p.name} style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: '6px', padding: '20px' }}>
+                <h3 style={{ margin: '0 0 8px', fontSize: '16px' }}>
+                  <span style={{ color: '#58a6ff' }}>📁 {p.name}</span>
+                </h3>
+                <p style={{ color: '#8b949e', fontSize: '13px', margin: '0 0 12px', lineHeight: 1.5 }}>{p.desc}</p>
+                <div style={{ display: 'flex', gap: '15px', fontSize: '12px', color: '#8b949e' }}>
+                  <span><span style={{ display: 'inline-block', width: '10px', height: '10px', borderRadius: '50%', background: langColors[p.lang], marginRight: '4px' }}></span>{p.lang}</span>
+                  <span>⭐ {p.stars}</span>
+                  <span>🍴 {p.forks}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Skills Tab */}
+        {activeTab === 'skills' && (
+          <div>
+            <div style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: '6px', padding: '20px' }}>
+              {skills.map(skill => (
+                <div key={skill.name} style={{ marginBottom: '15px' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '5px', fontSize: '13px' }}>
+                    <span>{skill.name}</span>
+                    <span style={{ color: '#8b949e' }}>{skill.level}%</span>
+                  </div>
+                  <div style={{ background: '#30363d', borderRadius: '3px', height: '8px', overflow: 'hidden' }}>
+                    <div style={{ width: `${skill.level}%`, height: '100%', background: 'linear-gradient(90deg, #238636, #2ea043)', borderRadius: '3px', transition: 'width 0.5s ease' }}></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            
+            <h3 style={{ fontSize: '14px', fontWeight: 600, margin: '25px 0 12px' }}>Tech Stack</h3>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+              {['AWS Lambda', 'API Gateway', 'DynamoDB', 'React', 'Next.js', 'Node.js', 'Python', 'FastAPI', 'Kubernetes', 'Docker', 'Kafka', 'Terraform', 'OpenAI', 'AWS Bedrock'].map(tech => (
+                <span key={tech} style={{ background: '#30363d', padding: '5px 12px', borderRadius: '20px', fontSize: '12px' }}>{tech}</span>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </div>
-  </section>
-
-  <section class="section">
-    <h2>Core Expertise</h2>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <div class="skill-icon">☁️</div>
-        <h3>Cloud & Serverless</h3>
-        <p>AWS Lambda, API Gateway, DynamoDB, CloudFront, S3 – building scalable, cost-effective infrastructure</p>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">🤖</div>
-        <h3>AI & LLM Integration</h3>
-        <p>OpenAI, AWS Bedrock, RAG Pattern – creating intelligent systems that enhance user experiences</p>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">⚛️</div>
-        <h3>Frontend Development</h3>
-        <p>React, Next.js, TypeScript – crafting responsive, performant user interfaces</p>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">🔧</div>
-        <h3>Backend Systems</h3>
-        <p>Node.js, Java, Python, FastAPI – building robust APIs and services</p>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">🐳</div>
-        <h3>Microservices</h3>
-        <p>Kubernetes, Docker, Kafka – orchestrating distributed systems at scale</p>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">🚀</div>
-        <h3>DevOps & Security</h3>
-        <p>CI/CD, Terraform, OAuth2, JWT, RBAC – automating deployments with security-first mindset</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Experience</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-date">2025 – Present</div>
-        <h3>Full Stack & AI Engineer</h3>
-        <div class="timeline-company">MUNDO Prints</div>
-        <ul>
-          <li>Architected serverless systems delivering 99.99% uptime and 42% revenue growth</li>
-          <li>Integrated LLMs using AWS Bedrock & OpenAI, improving response times by 45%</li>
-          <li>Led microservices migration reducing infrastructure costs by 28%</li>
-          <li>Built automated CI/CD pipelines reducing release time by 40%</li>
-        </ul>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-date">2022 – 2023</div>
-        <h3>Cloud Platform Engineer</h3>
-        <div class="timeline-company">Nextrics</div>
-        <ul>
-          <li>Delivered 99.9% availability for enterprise clients</li>
-          <li>Built Kubernetes + Kafka pipelines reducing load time by 40%</li>
-          <li>Automated DevOps pipelines reducing release cycles by 50%</li>
-        </ul>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-date">2022</div>
-        <h3>Developer</h3>
-        <div class="timeline-company">High Radius</div>
-        <ul>
-          <li>Built PCI-DSS compliant platform processing $1M+ monthly transactions</li>
-          <li>Enhanced backend performance by 40% for 5,000+ concurrent users</li>
-          <li>Developed real-time analytics dashboard boosting adoption by 20%</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Featured Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>Serverless E-commerce Platform</h3>
-        <div class="project-metrics">
-          <span class="metric">10K+ users</span>
-          <span class="metric">4× scaling</span>
-          <span class="metric">+42% revenue</span>
-        </div>
-        <p>Built a fully serverless architecture capable of handling massive traffic spikes while maintaining sub-second response times</p>
-      </div>
-      <div class="project-card">
-        <h3>AI Customer Support System</h3>
-        <div class="project-metrics">
-          <span class="metric">RAG-based</span>
-          <span class="metric">45% faster</span>
-          <span class="metric">+30% CSAT</span>
-        </div>
-        <p>Designed an intelligent chatbot using retrieval-augmented generation for context-aware, accurate customer responses</p>
-      </div>
-      <div class="project-card">
-        <h3>Microservices Migration</h3>
-        <div class="project-metrics">
-          <span class="metric">35% faster</span>
-          <span class="metric">-28% costs</span>
-          <span class="metric">K8s + Kafka</span>
-        </div>
-        <p>Led the transformation from monolith to microservices, dramatically improving system resilience and development velocity</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Education</h2>
-    <div class="education-card">
-      <div class="edu-item">
-        <div class="edu-degree">MS, Information Systems</div>
-        <div class="edu-school">Northeastern University</div>
-      </div>
-      <div class="edu-item">
-        <div class="edu-degree">BTech, Electronics & Communication</div>
-        <div class="edu-school">SRM University</div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <h2>Let's Connect</h2>
-    <div class="contact-links">
-      <a href="mailto:satyaakhilesh0402@gmail.com" class="contact-link">
-        ✉️ satyaakhilesh0402@gmail.com
-      </a>
-      <a href="https://linkedin.com/in/satya-akhilesh-pulavarthi" class="contact-link" target="_blank">
-        💼 LinkedIn
-      </a>
-    </div>
-  </footer>
-</body>
-</html>
+  );
+}
