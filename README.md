@@ -1,145 +1,129 @@
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:1a1a2e&height=180&section=header&text=Satya%20Akhilesh&fontSize=42&fontColor=ffffff&animation=twinkling&fontAlignY=35)
-
-[![LinkedIn](https://img.shields.io/badge/-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/satya-akhilesh-pulavarthi)
-[![Email](https://img.shields.io/badge/-Say%20Hi-000000?style=flat-square&logo=gmail&logoColor=white)](mailto:satyaakhilesh0402@gmail.com)
-[![Profile Views](https://komarev.com/ghpvc/?username=SatyaAkhiles&style=flat-square&color=1a1a2e)](https://github.com/SatyaAkhiles)
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=FFFFFF&center=true&vCenter=true&random=false&width=450&lines=Cloud+Engineer;Serverless+Architect;AI+Integration;Building+systems+that+scale" alt="Typing" />
+![Header](https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:1a1a2e&height=180&section=header&text=Tom&fontSize=50&fontColor=ffffff&animation=twinkling&fontAlignY=35)
 
 </div>
 
 ---
 
-### Hey there 👋
+### Hey 👋
 
-I'm a cloud engineer who likes building things that don't break at 3am.
+Full stack engineer who builds systems that handle real traffic.
 
-Right now I'm at **MUNDO Prints** — working on serverless backends and plugging in AI where it makes sense. Before that, I helped teams at **Nextrics** and **HighRadius** ship payment systems and cloud infra.
+Currently at **MUNDO Prints** in Boston — building cloud-native microservices, integrating AI/ML, and shipping serverless workflows. Before that, scaled infrastructure for 1M+ users at **Nextrics** and built payment systems at **HighRadius**.
 
-Doing my MS at **Northeastern** on the side.
-
----
-
-<details>
-<summary><b>📍 More about me</b></summary>
-<br>
-
-```javascript
-const satya = {
-    location: "Boston, MA",
-    education: {
-        masters: "MS Information Systems @ Northeastern",
-        bachelors: "BTech ECE @ SRM University"
-    },
-    current: "Full Stack & AI Engineer @ MUNDO Prints",
-    interests: ["Cloud Architecture", "Serverless", "AI/ML", "DevOps"],
-    
-    fun: "I automate things I'll only do twice"
-};
-```
-
-</details>
+MS in Information Systems @ **Northeastern**. CS undergrad @ **SRM**.
 
 ---
 
-### What I work with
+### Stack
 
-<img src="https://skillicons.dev/icons?i=aws,ts,react,nextjs,nodejs,python,java,kubernetes,docker,terraform,kafka,dynamodb&theme=dark" />
+<img src="https://skillicons.dev/icons?i=java,js,ts,python,react,nextjs,angular,spring,nodejs,fastapi,mongodb,postgres,mysql,redis,dynamodb,aws,gcp,docker,kubernetes,kafka,jenkins,github,grafana,prometheus&perline=12&theme=dark" />
 
 <details>
-<summary><b>📂 Full breakdown</b></summary>
+<summary><b>Full breakdown</b></summary>
 <br>
 
 | Area | Tech |
 |------|------|
-| **Cloud** | AWS Lambda, API Gateway, DynamoDB, S3, CloudFront, Bedrock |
-| **Frontend** | React, Next.js, TypeScript |
-| **Backend** | Node.js, Python, FastAPI, Java |
-| **Infra** | Kubernetes, Docker, Terraform, Kafka |
-| **AI** | OpenAI, AWS Bedrock, RAG Pattern |
-| **DevOps** | GitHub Actions, CI/CD, Monitoring |
-| **Security** | OAuth2, JWT, RBAC, PCI-DSS |
+| **Languages** | Java 8-17, JavaScript ES6+, TypeScript, Python 3.8+, SQL, Bash |
+| **Frontend** | React 18+, Next.js 13+, Angular 15+, Tailwind, D3.js, GraphQL |
+| **Backend** | Spring Boot 3.x, Node.js, FastAPI, Hibernate/JPA, REST APIs |
+| **Databases** | MongoDB, PostgreSQL, MySQL, Redis, DynamoDB, Redshift |
+| **Cloud** | AWS (Lambda, EC2, S3, VPC, IAM), GCP, Docker, Kubernetes |
+| **Streaming** | Kafka, RabbitMQ, Hadoop, WebSockets |
+| **DevOps** | Jenkins, GitHub Actions, Helm, Terraform |
+| **Monitoring** | Grafana, Prometheus, ELK Stack, Splunk, CloudWatch |
+| **Security** | OAuth 2.0, JWT, Spring Security, RBAC, PCI-DSS |
 
 </details>
 
 ---
 
-### Things I've built
+### Work
 
 <details open>
-<summary><b>🛒 serverless-ecommerce</b></summary>
+<summary><b>MUNDO Prints</b> — Full Stack & AI Programmer (Jan 2025 - Present)</summary>
 <br>
 
-E-commerce backend running fully on AWS Lambda. No servers to babysit.
+Building cloud-native microservices with Spring Boot 3.x and WebFlux. Hexagonal Architecture, CQRS, DDD — the works.
 
-- Handles **10K+ concurrent users** without breaking a sweat
-- Auto-scales during traffic spikes — Black Friday tested
-- **42% revenue growth** after migration
-- Stack: `Lambda` `DynamoDB` `CloudFront` `React`
+- Integrated **OpenAI GPT-4** and **AWS Bedrock** for pricing algorithms and content generation
+- Built serverless workflows with Lambda, API Gateway, S3 triggers — cut latency by **35%**
+- Scaled AI chatbots from 18s to **6s response time** using Redis caching
+- React 18 + Next.js 13 frontend — Core Web Vitals optimized, WCAG 2.1 AA compliant
+- **95%+ test coverage** with JUnit 5 and Mockito
 
 </details>
 
 <details>
-<summary><b>🤖 ai-support-bot</b></summary>
+<summary><b>Nextrics</b> — Full Stack & Cloud Engineer (May 2022 - Aug 2023)</summary>
 <br>
 
-Customer support chatbot that actually understands context. Uses RAG so it doesn't hallucinate random answers.
+Cloud-native microservices at scale. Docker, Kubernetes, the whole nine yards.
 
-- **45% faster** response times
-- **30% higher** customer satisfaction
-- Pulls from knowledge base in real-time
-- Stack: `Python` `OpenAI` `AWS Bedrock` `FastAPI`
+- Architected infrastructure supporting **1M+ active users**
+- Built real-time streaming pipelines with **Kafka** — exactly-once semantics, millisecond latency
+- Reduced backend processing by **30%** through LRU caching, B-tree indexing, async patterns
+- Zero-downtime deployments with rolling updates, canary, blue-green strategies
+- Full CI/CD automation with Jenkins and GitHub Actions across 5+ prod environments
 
 </details>
 
 <details>
-<summary><b>🔧 microservices-framework</b></summary>
+<summary><b>HighRadius</b> — Software Engineer Intern (Jan 2022 - Apr 2022)</summary>
 <br>
 
-Helped break apart a monolith into microservices. The kind of project everyone dreads but someone has to do.
+Payment platform work. Security-first, PCI-DSS compliant.
 
-- **35% faster** processing
-- **28% less** infrastructure cost
-- Zero-downtime migration
-- Stack: `Kubernetes` `Kafka` `Java` `Terraform`
+- Built backend services for platform processing **$1M+ monthly transactions**
+- Refactored legacy monolith — reduced code duplication by **40%** using SOLID principles
+- RESTful APIs on EC2 with load balancing — **5,000+ concurrent users**, 99.99% uptime
+- Sub-200ms response times with connection pooling and database indexing
 
 </details>
 
 ---
 
-### Work history
+### Projects
 
 <details>
-<summary><b>💼 MUNDO Prints</b> — Full Stack & AI Engineer (2025 - Present)</summary>
+<summary><b>Cloud-Native Microservices Platform</b></summary>
 <br>
 
-- Architected serverless systems with **99.99% uptime**
-- Integrated LLMs using AWS Bedrock & OpenAI
-- Led microservices migration — cut infra costs by **28%**
-- Built CI/CD pipelines — deployments **40% faster**
+Production-grade microservices architecture with everything wired up properly.
+
+- Spring Boot 3.x with reactive WebFlux
+- Hexagonal Architecture + CQRS + DDD
+- Kubernetes deployment with Helm charts
+- Prometheus + Grafana monitoring
+- Circuit breaker and bulkhead patterns for fault tolerance
 
 </details>
 
 <details>
-<summary><b>💼 Nextrics</b> — Cloud Platform Engineer (2022 - 2023)</summary>
+<summary><b>AI-Powered Pricing Engine</b></summary>
 <br>
 
-- Maintained **99.9% availability** for enterprise clients
-- Built Kubernetes + Kafka pipelines
-- Automated DevOps — release cycles **50% shorter**
+ML-powered dynamic pricing that actually moves the needle.
+
+- OpenAI GPT-4 + AWS Bedrock integration
+- Serverless on Lambda with API Gateway
+- **$75K+ revenue impact**
+- **30% increase** in user engagement
 
 </details>
 
 <details>
-<summary><b>💼 HighRadius</b> — Developer (2022)</summary>
+<summary><b>Real-Time Event Streaming Pipeline</b></summary>
 <br>
 
-- Built PCI-DSS compliant payment platform
-- Processed **$1M+ monthly** transactions
-- Improved backend performance by **40%** for 5K+ users
-- Created real-time analytics dashboard
+Kafka-based streaming that handles the load.
+
+- Exactly-once semantics with Schema Registry
+- Consumer groups for parallel processing
+- Millisecond latency under peak load
+- Fault-tolerant message durability
 
 </details>
 
@@ -148,43 +132,31 @@ Helped break apart a monolith into microservices. The kind of project everyone d
 ### Numbers
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│  99.99% uptime  ·  28% cost cut  ·  10K+ users  ·  40% faster deploys  │
-└─────────────────────────────────────────────────────────┘
+1M+ users · $1M+ transactions/mo · 99.99% uptime · 35% latency reduction · 95% test coverage
 ```
 
 ---
 
-### GitHub activity
+### Education
 
-<div align="center">
+🎓 **MS Information Systems** — Northeastern University, Boston
 
-<img src="https://github-readme-stats.vercel.app/api?username=SatyaAkhiles&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&hide_title=true" width="48%" />
-<img src="https://github-readme-streak-stats.herokuapp.com?user=SatyaAkhiles&theme=dark&hide_border=true&background=0D1117" width="48%" />
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=SatyaAkhiles&theme=github-dark&hide_border=true&bg_color=0d1117&area=true" width="98%"/>
-
-</div>
-
----
-
-### Snake eating my contributions
-
-<div align="center">
-
-![Snake](https://raw.githubusercontent.com/SatyaAkhiles/SatyaAkhiles/output/github-snake-dark.svg)
-
-</div>
-
-> To enable this, add a GitHub Action. I can show you how if you want.
+🎓 **BTech Computer Science** — SRM University, Chennai
 
 ---
 
 <div align="center">
 
-*Building stuff, breaking stuff, fixing stuff.*
+<img src="https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&hide_title=true" width="48%" />
+<img src="https://github-readme-streak-stats.herokuapp.com?user=your-username&theme=dark&hide_border=true&background=0D1117" width="48%" />
 
-[![BuyMeACoffee](https://img.shields.io/badge/-Buy%20me%20a%20coffee-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/satyaakhiles)
+</div>
+
+---
+
+<div align="center">
+
+*Ship it, monitor it, fix it, repeat.*
 
 ![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:1a1a2e&height=100&section=footer)
 
