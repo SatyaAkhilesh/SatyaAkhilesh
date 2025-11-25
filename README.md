@@ -1,6 +1,8 @@
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:1a1a2e&height=180&section=header&text=Tom&fontSize=50&fontColor=ffffff&animation=twinkling&fontAlignY=35)
+![Header](https://capsule-render.vercel.app/api?type=venom&color=0:000000,50:1a1a2e,100:0f0f23&height=200&section=header&text=Satya&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=40&stroke=ffffff&strokeWidth=1)
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=FFFFFF&center=true&vCenter=true&random=false&width=500&lines=Full+Stack+Engineer;Cloud+Architect;AI+%2F+ML+Integration;Building+systems+that+scale" alt="Typing" />
 
 </div>
 
@@ -147,8 +149,12 @@ Kafka-based streaming that handles the load.
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&hide_title=true" width="48%" />
-<img src="https://github-readme-streak-stats.herokuapp.com?user=your-username&theme=dark&hide_border=true&background=0D1117" width="48%" />
+<img src="https://github-readme-stats.vercel.app/api?username=SatyaAkhiles&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&hide_title=true" width="48%" />
+<img src="https://github-readme-streak-stats.herokuapp.com?user=SatyaAkhiles&theme=dark&hide_border=true&background=0D1117" width="48%" />
+
+<br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=SatyaAkhiles&theme=github-dark&hide_border=true&bg_color=0d1117&area=true" width="98%"/>
 
 </div>
 
@@ -158,6 +164,6 @@ Kafka-based streaming that handles the load.
 
 *Ship it, monitor it, fix it, repeat.*
 
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:1a1a2e&height=100&section=footer)
+![Footer](https://capsule-render.vercel.app/api?type=venom&color=0:0f0f23,50:1a1a2e,100:000000&height=120&section=footer)
 
 </div>
